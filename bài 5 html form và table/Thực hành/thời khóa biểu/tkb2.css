@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.text-left{
+    text-align: left !important;
+}
+.text-right{
+    text-align: right !important;
+}
+.schedule{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.schedule-header{
+    width: 100%;
+}
+.tkb-c {
+    Width: 100%
+
+}
+.day {
+   background: yellow;
+    Text-align: center;
+}
+#Dong\ 2{
+    background-color:orange ;
+}
+.mon {
+    text-align: center;
+}

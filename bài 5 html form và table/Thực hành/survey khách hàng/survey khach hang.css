@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nhan{
+    width: 700px;
+
+}
+.nhann {
+    text-align: center;
+}

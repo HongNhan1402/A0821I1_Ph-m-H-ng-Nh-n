@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.bgr-black{
+    background: #000;
+}
+.chess-board{
+    background: #d79e09;
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+.th-col{
+    width: 45px;
+    padding-left: 10px;
+}
+.th-row{
+    padding-top: 10px;
+    height: 40px;
+}
+table{
+    width: 100%;
+    height: 100%;
+}
+td{
+    background: #fff;
+}

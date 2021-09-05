@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#form-hobby{
+    width: 500px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: aqua;
+}
+#form-hobby table{
+    width: 100%;
+    background-color: cornsilk;
+    padding-bottom: 10px;
+}
+.header-form {
+    font-size: 20px;
+    padding: 8px;
+    background-color: #f65510;
+    color: #fff;
+    font-weight: 500;
+}
+
+.row-content{
+    text-align: right;
+    color: blue;
+    width: 25%;
+    padding: 10px;
+}
+.info-input{
+    padding: 2px 5px;
+}
+.checkbox-hobby{
+    padding-left: 8px;
+    display: inline-block;
+    width: 30%;
+    color: #f65510;
+}
+.btn{
+    padding: 3px;
+    margin-right: 30px;
+}
