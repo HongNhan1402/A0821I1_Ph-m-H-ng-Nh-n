@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+    <h2>Caculator</h2>
+    <form action="">
+        <input type="text" id="input1">
+        <input type="text" id="input2"><br><br>
+        <button type="button" onclick="Caculator('add')">Addition(+)</button>
+        <button type="button" onclick="Caculator('sub')">Subtraction(-)</button>
+        <button type="button" onclick="Caculator('mul')">Multiplication(x)</button>
+        <button type="button" onclick="Caculator('div')">Division(/)</button>
+<!--        // onclick=" " gọi hàm để làm chức năng-->
+<!--        // Tên hàm()-->
+    </form>
+    <p id="result"></p>
+    <script>
+        function Caculator(obj) {
+            let input1, input2, result;
+            input1 = document.getElementById('input1').value;
+            input2 = document.getElementById('input2').value;
+            input1 = parseFloat(input1);
+            input2 = parseFloat(input2);
+
+            // Xác định + - * /
+            if(obj === 'add')   result = input1 + input2;
+            else if(obj === 'sub') result = input1 - input2;
+            else if(obj === 'mul')  result = input1 * input2;
+            else result = input1 / input2;
+            // Xuất ra
+            document.getElementById('result').innerText = "Result= " + result;
+        }
+
+    </script>
+</body>
+</html>

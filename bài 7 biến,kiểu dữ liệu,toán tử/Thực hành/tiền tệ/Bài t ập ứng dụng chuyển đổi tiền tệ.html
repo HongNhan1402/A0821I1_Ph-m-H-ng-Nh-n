@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Ứng dụng chuyển đổi tiền tệ</title>
+   <link rel="stylesheet" href="tiente.css">
+</head>
+<body>
+      <form action="">
+         <table>
+            <tr>
+               <th>Amount</th>
+               <th>From Currency</th>
+               <th>To Currency</th>
+               <th></th>
+            </tr>
+            <tr>
+               <td>
+                  <input type="text" class="first2" id="Amount">
+               </td>
+               <td>
+                  <select name="Fromcurrency" id="fromCurrency">
+                     <option value="VietNam">VietNam</option>
+                     <option value="USD">USD</option>
+                  </select>
+               </td>
+
+               <td>
+                  <select name="Tocurrency" id="toCurrency">
+                     <option value="USD">USD</option>
+                     <option value="VietNam">VietNam</option>
+                  </select>
+               </td>
+               <td>
+                  <button type="button" class="button" onclick="convert()">Convert</button>
+               </td>
+            </tr>
+         </table>
+      </form>
+      <p id="result"></p>
+      <script>
+         function convert() {
+            let inputAmout, inputFromCurrency, inputToCurrency, result, convert;
+            inputAmout = document.getElementById('Amount').value;
+            result = parseInt(inputAmout);
+            inputFromCurrency = document.getElementById('fromCurrency').value;
+            inputToCurrency = document.getElementById('toCurrency').value;
+
+            if (inputFromCurrency === 'VietNam' && inputToCurrency === 'USD')
+               convert = 'Result=' + result/23000 + 'USD';
+            else convert = 'Result=' + result*23000 + 'VNĐ';
+            document.getElementById('result').innerText = convert;
+         }
+      </script>
+</body>
+</html>

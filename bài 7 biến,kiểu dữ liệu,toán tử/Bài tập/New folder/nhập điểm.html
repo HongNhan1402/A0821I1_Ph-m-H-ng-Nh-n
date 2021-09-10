@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let iputHoa ;
+        let iputLy ;
+        let inputSinh ;
+        inputHoa = prompt('Nhap Diem Hoa');
+        inputLy = prompt('Nhap Diem Ly');
+        inputSinh = prompt('Nhap Diem Sinh');
+
+
+        let Hoa = parseInt(inputHoa);
+        let Ly = parseInt(inputLy);
+        let Sinh = parseInt(inputSinh);
+
+
+        let mediumScore = (Hoa+Ly+Sinh)/3;
+        let total = Hoa+Ly+Sinh
+        document.write(mediumScore)
+        document.write(total)
+
+    </script>
+</body>
+</html>
