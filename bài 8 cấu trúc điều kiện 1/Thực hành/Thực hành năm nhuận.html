@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let Year = parseInt(prompt('inputYear'));
+        if (Year%4 == 0) {
+            if (Year%100 == 0) {
+                if (Year%400 == 0) {
+                    document.write('Năm nhuận');
+                } else {
+                    document.write('Năm không nhuận'); }
+             } else {
+                    document.write('Năm nhuận'); }
+
+        } else {
+                    document.write('Năm không nhuận') }
+
+
+
+    </script>
+
+</body>
+</html>
