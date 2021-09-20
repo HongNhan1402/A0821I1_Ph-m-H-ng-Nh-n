@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let Result = '';
+        for (i=1;i<=100;i++){
+            if (i%3==0 && i%5==0) {
+                Result += '\tFizzBuzz';
+            } else if (i%3 == 0) {
+                Result += '\tFizz'
+            } else if (i%5 == 0) {
+                Result += '\tBuzz'
+            } else {
+                Result += '\t' + i
+            }
+        }
+        document.write(Result)
+    </script>
+</body>
+</html>

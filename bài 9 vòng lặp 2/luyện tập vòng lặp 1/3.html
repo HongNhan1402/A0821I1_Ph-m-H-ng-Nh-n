@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        // let result = "20 số đầu tiên trong dãy fibonacci: ";
+        // let count = 1;
+        // while (count <= 20) {
+        //     result += checkFibonacci(count) + " ";
+        //     count++;
+        // }
+        // document.write(result);
+        //
+        // function checkFibonacci(n) {
+        //     if (n == 1 || n == 0) return n;
+        //     else return checkFibonacci(n - 1) + checkFibonacci(n - 2);
+        // }
+        let x = 1
+        let y = 1
+        let count = x + y
+        let Result = '20 so dau tien trong day fibonacci: 1 1 '
+        let z
+        for (let i = 3;i<=20; i++) {
+            z = x + y
+            Result = Result + z + ' '
+            count += z;
+            x=y;
+            y=z;
+        }
+        document.write(Result)
+
+    </script>
+</body>
+</html>

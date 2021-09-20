@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <script>
+
+          let x = 1
+          let y = 1
+          let count = x + y
+          let Result = '20 so dau tien trong day fibonacci: 1 1 '
+          let z
+          for (let i = 3;i<=20; i++) {
+            z = x + y
+            Result = Result + z + ' '
+            count += z;
+            x=y;
+            y=z;
+          }
+          document.write(count)
+
+        </script>
+</body>
+</html>
