@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    let a = [12,23,432,23,67,423,65,312,41,42,3,1]
+    let first = 0;
+    let last = a.length-1;
+    while (first<last) {
+        let x = a[first];
+        a[first] = a[last];
+        a[last] = x
+        first++;
+        last--;
+    }
+    document.write(a)
+  </script>
+</body>
+</html>

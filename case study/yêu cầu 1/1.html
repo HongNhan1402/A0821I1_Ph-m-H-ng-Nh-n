@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<span>Nhập chiều dài<input type="number" id="chieu_dai" style="margin-left: 10px"></span><br><br>
+<span>Nhập chiều rộng<input type="number" id="chieu_rong"></span><br><br>
+<input type="submit" value="DRAW" onclick="draw()">
+<script>
+    function draw () {
+        let chieudai = document.getElementById('chieu_dai').value;
+        let chieurong = document.getElementById('chieu_rong').value;
+        let result = ' ';
+        let canh_rong = '';
+        let canh_dac = '';
+        for (let i=0;i<chieudai;i++) {
+            // 0 -> chiều dài -1
+            canh_dac += '*';
+            // Cạnh rỗng
+            if (i===0 || i===chieudai-1) {
+                canh_rong += '*';
+            } else {
+                canh_rong += '&nbsp&nbsp';
+            }
+        }
+        for (let i=0;i<chieurong;i++) {
+            if (i===0 || i===chieurong-1) result += canh_dac + '<br>';
+            else result += canh_rong + '<br>'
+        }
+        document.write(result);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let size;
+        // tạo mảng theo kích thước
+        do {
+            size = parseInt(prompt('Nhập kích thước của mảng'));
+        } while (size<=0);
+
+        let arr = new Array(size);
+
+        // nhập phần tử của mảng
+        for (let i = 0;i<arr.length;i++) {
+            arr[i] = prompt('Nhập phần tử thứ ' + i  + ' của mảng')
+        }
+        document.write('kích thước của mảng là' +' '+size);
+    </script>
+</body>
+</html>

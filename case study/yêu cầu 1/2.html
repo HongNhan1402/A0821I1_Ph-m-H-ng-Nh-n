@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Missing Value(A,B)</title>
+</head>
+<body>
+<script>
+    let height = parseInt(prompt('Nhập chiều cao của tam giác.'));
+    let result = ' ' ;
+    for(let row = 1; row<=height;row++)
+    {
+        if(row===1 || row===height)
+        {
+            for(let col=1;col<=row;col++)
+            {
+                result += '*';
+            }
+            result += '<br>';
+        }
+        else{
+            for(let col = 1; col<=row;col++)
+            {
+                if(col===1 || col===row) {
+                    result += '*'
+                } else {
+                    result += '&nbsp&nbsp'
+                }
+            }
+            result += '<br>'
+        }
+    } document.write(result)
+</script>
+</body>
+</html>
