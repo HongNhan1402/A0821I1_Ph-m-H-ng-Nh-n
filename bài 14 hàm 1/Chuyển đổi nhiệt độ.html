@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>
+        Temperature Converter
+    </h2>
+    <p>
+        Type a value in the Fahrenheit field to converse the value to Celcius
+    </p>
+    <form action="">
+        <span>Fahrenheit<input id="input" type="number" style="margin-left: 10px" ></span><br>
+        <input type="submit" value="Convert" onclick="convert" style="padding: 15px">
+    </form>
+    <script>
+        function convert() {
+            let doF = document.getElementById('input');
+            let doC = 0;
+            doC = 5/9*(doF-32);
+            document.write('Do C la:' + doC);
+        }
+    </script>
+</body>
+</html>
