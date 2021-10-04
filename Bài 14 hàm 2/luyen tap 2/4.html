@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+
+      let character = prompt('Nhập một kí tự')
+      do {
+          if (character.length<=1) break;
+          if (character.length>1) alert('Vui lòng nhập vào 1 KÍ TỰ')
+      } while (true);
+      alert(isNumber(character))
+      function isNumber(kitu) {
+          if (kitu>=0 && kitu<=9) return true;
+          else return false;
+      }
+  </script>
+</body>
+</html>

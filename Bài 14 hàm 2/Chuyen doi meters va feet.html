@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <span>Nhap meters <input type="number" id="meters" placeholder="inputMeters"></span>
+    <input type="submit" onclick="Convert()" value="Convert"><br><br>
+    <span>Nhap feet <input type="number" id="feet" placeholder="inputFeet" style="margin-left: 18px"></span>
+    <input type="submit" onclick="Add()" value="Convert">
+    <script>
+        function Convert () {
+            let meters = document.getElementById("meters")
+            let foot = 0;
+            foot = 3.279*meters;
+            document.write('Foot =' + foot)
+        }
+
+        function Add () {
+            let foot = document.getElementById("feet")
+            let meters = 0;
+            meters = 0.305.foot;
+            document.write('Meters =' + meters)
+        }
+
+    </script>
+</body>
+</html>

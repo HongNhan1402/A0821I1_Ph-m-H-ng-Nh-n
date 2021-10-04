@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt('InputA'));
+        let b = parseInt(prompt('InputB'));
+        let c = parseInt(prompt('InputC'));
+    alert(compare(a,b,c));
+    function compare (x,y,z) {
+        let min = x;
+        if (y<min) min = y;
+        if (z<min) min = z;
+        return min;
+    }
+    </script>
+
+</body>
+</html>
