@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--    <script>-->
+<!--        let Cricle = function (radius) {-->
+<!--            this.radius = radius;-->
+<!--            // this.Cricle = function () {-->
+<!--            //     this.radius = 2;-->
+<!--            // }-->
+<!--            this.getRadius = function () {-->
+<!--                return this.radius;-->
+<!--            }-->
+<!--            this.getArea = function () {-->
+<!--                return Math.PI*this.radius*this.radius;-->
+<!--            }-->
+<!--        }-->
+
+<!--        let cricle = new Cricle(2);-->
+<!--        let radius = cricle.getRadius();-->
+<!--        let area = cricle.getArea();-->
+<!--        alert('radius =' + radius + '\n' + 'area =' + area);-->
+<!--    </script>-->
+    <canvas id="myCanvas" width="1000px" height="1000px"></canvas>
+    <script>
+        class Circle {
+            constructor(radius) {
+                this.radius = radius;
+            }
+            getRadius () {
+                return this.radius;
+            }
+            getArea () {
+                return Math.PI*this.radius*this.radius;
+            }
+            setRadius (radius) {
+                this.radius = radius;
+            }
+            drawCircle() {
+                let c = document.getElementById("myCanvas");
+                let ctx = c.getContext("2d");
+                ctx.beginPath();
+                ctx.arc(500,500,this.radius,0,2*Math.PI);
+                ctx.stroke();
+            }
+        }
+        let circle = new Circle(500);
+        circle.drawCircle();
+
+
+    </script>
+</body>
+</html>
