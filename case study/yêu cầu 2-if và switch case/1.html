@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="">
+        <span>Vui lòng nhập tiền lương của bạn <input type="number" placeholder="inputSalary" id="salary"></span>
+        <input type="submit" value="Add" onclick="Add()">
+    </form>
+    <script>
+        // let a = document.getElementById('salary');
+        // let result = 0;
+        function Add () {
+            let a = document.getElementById('salary').value;
+            let result = 0;
+            if (a>=1500000) {
+                result = (20*a)/100
+            }
+            else if (a>7000000) {
+                result = (10*a)/100
+            } else result = (5*a)/100
+            document.write('Thuế bạn phải nộp là:' + ' ' + result + ' ' + 'Đồng')
+        }
+    </script>
+</body>
+</html>
