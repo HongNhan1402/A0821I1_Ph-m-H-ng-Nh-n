@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--    <script>-->
+<!--        let count = 0;-->
+<!--        let input = prompt('inputChar');-->
+<!--        // baa-->
+<!--        for (let i=0;i<input.length;i++) {-->
+<!--            let check = true; // cờ báo hiệu-->
+<!--            // i=0: a  kiểm tra b đúng, a kiểm tra vs a thì sai-->
+<!--            for(let j=0;j<input.length;j++){-->
+<!--                if(i !== j){-->
+<!--                    if(input[i] === input[j]){-->
+<!--                        check = false;-->
+<!--                        break;-->
+<!--                    }-->
+<!--                }-->
+<!--            }-->
+<!--            if(check===true) count++;-->
+<!--        }-->
+<!--        alert(count)-->
+<!--    </script>-->
+<script>
+    let s = prompt('Nhập vào chuỗi s.');
+    let count = 0;
+    let array = Array();
+    for(let i=0;i<s.length;i++){
+        let number = s[i].charCodeAt();
+        //
+        if(array[number] !== true){
+            count++;
+            array[number] = true;
+        }
+    }
+    document.write(s + ' có ' + count + ' kí tự khác nhau' );
+</script>
+</body>
+</html>

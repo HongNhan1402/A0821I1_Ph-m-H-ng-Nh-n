@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a = [];
+        let b = [];
+        let size = parseInt(prompt('Nhập độ dài mảng'));
+        for (let i=0;i<size;i++) {
+            a.push(parseInt(prompt('Nhập phần tử mảng 1')));
+            b.push(parseInt(prompt('Nhập phần tử mảng 2')));
+
+        }
+        function macFraction (a,b) {
+            let max = 0;
+            for (let i=1;i<a.length;i++) {
+                if (a[max]*b[i] < a[i]*b[max]) {
+                    max = i;
+                }
+            }
+            return max;
+        }
+        alert('Chỉ số lớn nhất là' + ' ' + macFraction(a,b));
+    </script>
+</body>
+</html>

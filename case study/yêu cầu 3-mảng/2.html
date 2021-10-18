@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+      let arrA = [];
+      let arrB = [];
+      let result = [];
+      let sizeA = parseInt(prompt('Nhập chiều dài mảng A'));
+      let sizeB = parseInt(prompt('Nhập chiều dài mảng B'));
+      for (let i=0;i<sizeA;i++) {
+          arrA.push(parseInt(prompt('Nhập phần tử thứ' + ' ' + i + ' ' + 'của mảng A')))
+      }
+      for (let i=0;i<sizeB;i++) {
+          arrA.push(parseInt(prompt('Nhập phần tử thứ' + ' ' + i + ' ' + 'của mảng B')))
+      }
+      for (let i=0;i<sizeB;i++) {
+          if (arrA.indexOf(arrB[i]) === -1 && result.indexOf(arrB[i]) === -1) {
+                result.push(arrB[i]);
+          }
+      }
+      alert('Kết quả là' + result);
+  </script>
+</body>
+</html>

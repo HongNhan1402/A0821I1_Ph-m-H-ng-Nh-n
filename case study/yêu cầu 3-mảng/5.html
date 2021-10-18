@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <table border="1" cellspacing="1" style="margin: 0px auto">
+            <tr>
+                <td>Coffee</td>
+                <td>
+                    <input type="submit" value="Add" onclick="Add(0)">
+                </td>
+            </tr>
+            <tr>
+                <td>Cam vat</td>
+                <td>
+                    <input type="submit" value="Add" onclick="Add(1)">
+                </td>
+            </tr>
+            <tr>
+                <td>Nuoc ep ca rot</td>
+                <td>
+                    <input type="submit" value="Add" onclick="Add(2)">
+                </td>
+            </tr>
+            <tr>
+                <td>Nuoc ep ca chua</td>
+                <td>
+                    <input type="submit" value="Add" onclick="Add(3)">
+                </td>
+            </tr>
+            <tr>
+                <td>Nuoc loc</td>
+                <td>
+                    <input type="submit" value="Add" onclick="Add(4)">
+                </td>
+            </tr>
+            <tr>
+                <td>Nuoc dua</td>
+                <td>
+                    <input type="submit" value="Add" onclick="Add(5)">
+                </td>
+            </tr>
+            <tr>
+                <td>Tong tien</td>
+                <td>
+                    <input type="submit" value="Money" onclick="Add(6)">
+                </td>
+            </tr>
+        </table>
+    <p id="option-user"></p>
+    <script>
+        let total = 0;
+        let save = '';
+        function Add(index) {
+            if (index === 6) {
+                save += 'Tong tien la ' + total
+                document.getElementById('option-user').innerHTML = save;
+            } else {
+                let number = parseInt(prompt('Nhap so luong'));
+                let arr = [10000, 12000, 15000, 15000, 20000, 250000];
+                let drinks = ['coffee', 'Cam vat', 'Nuoc ep ca rot', 'Nuoc ep ca chua', 'Nuoc loc', 'Nuoc dua'];
+                total += arr[index] * number;
+                save += drinks[index] + '' + ' co gia tien la ' + arr[index] * number + '<br>';
+                document.getElementById('option-user').innerHTML = save;
+            }
+        }
+
+    </script>
+</body>
+</html>

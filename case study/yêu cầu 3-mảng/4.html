@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        let number = parseInt(prompt('InputNumber'));
+        let result = '';
+        let numberString = number.toString();
+        for (let i=0;i<=numberString.length;i++) {
+            switch (numberString.substring(i,i+1)) {
+                case '0':
+                    result += 'không' + ' ';
+                    break
+                case '1':
+                    result += 'một' + ' ';
+                    break
+                case '2':
+                    result += 'hai' + ' ';
+                    break
+                case '3':
+                    result += 'ba' + ' ';
+                    break
+                case '4':
+                    result += 'bốn' + ' ';
+                    break
+                case '5':
+                    result += 'năm' + ' ';
+                    break
+                case '6':
+                    result += 'sáu' + ' ';
+                    break
+                case '7':
+                    result += 'bảy' + ' ';
+                    break
+                case '8':
+                    result += 'tám' + ' ';
+                    break
+                case '9':
+                    result += '9' + ' ';
+                    break
+            }
+        }
+        document.getElementById('result').innerHTML = result;
+    </script>
+</body>
+</html>
