@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        // let m = parseInt(prompt('Input Row'));
+        // let n = parseInt(prompt('Input Col'));
+        // let matrix = [];
+        // for (let i=0;i<m;i++) {
+        //     let row = [];
+        //     for (let j=0;j<n;j++) {
+        //         row[j] = parseInt(prompt('Nhập số vào ma trận'))
+        //     }
+        //     maxtrix[i] = row;
+        // }
+        let sum = 0;
+        let row = parseInt(prompt("Nhập vào số hàng"));
+        let col = parseInt(prompt("Nhập vào số cột"));
+        // let matrix = [row][col];
+        let matrix = [row];
+        for(let i=0;i<row;i++){
+            matrix[i] = [col];
+            for(let j=0;j<col;j++){
+                matrix[i][j] = parseInt(prompt('Nhập số vào ma trận'));
+                if(matrix[i][j]%2 === 0) sum += matrix[i][j];
+            }
+        }
+        alert(matrix + "\n" + sum);
+    </script>
+</body>
+</html>

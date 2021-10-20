@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let count = 0;
+  let row = parseInt(prompt("Nhập vào số hàng"));
+  let col = parseInt(prompt("Nhập vào số cột"));
+  // let matrix = [row][col];
+  let matrix = [row];
+  for(let i=0;i<row;i++){
+        matrix[i] = [col];
+        for(let j=0;j<col;j++){
+            matrix[i][j] = parseInt(prompt('Nhập số vào ma trận'));
+            if(checkSNT(matrix[i][j]) === true) count++;
+            document.write(matrix[i][j] + ' ');
+        }
+        document.write('<br>');
+  }
+  document.write('<br>' + 'Có ' +count + ' số nguyên tố');
+  function checkSNT(value){
+      if(value<2) return false;
+      else{
+          // i<= value-1
+          // i<= value/2;
+          // i<= Math.sqrt(value);
+          // ví dụ số 9: duyệt 1 2 3, 1-8, 1-4
+          for(let i=2;i<=Math.sqrt(value);i++){
+              // i=2; i<= 1.4
+              if(value%i===0) return false;
+          }
+          return true;
+      }
+  }
+  //alert(matrix + "\n" + sum);
+</script>
+</body>
+</html>

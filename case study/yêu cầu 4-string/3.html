@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function commonCharacterCount (s1,s2) {
+            let arr1 = s1.split('');
+            let arr2 = s2.split('');
+            let total = 0;
+            for (let i=0;i<arr1.length;i++) {
+                for (let j=0;j<arr2.length;j++) {
+                    if (arr1[i] === arr2[j]) {
+                        total++;
+                        arr1.splice(i, 1);
+                        arr2.splice(j, 1);
+                        i--;
+                        break;
+                    }
+                }
+            }
+            return total;
+        }
+        let s1 = prompt('Nhập vào chuỗi 1');
+        let s2 = prompt('Nhập vào chuỗi 2');
+        alert('Số lượng kí tự giống nhau là' + ' ' + commonCharacterCount(s1,s2));
+    </script>
+</body>
+</html>
